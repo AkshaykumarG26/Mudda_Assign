@@ -23,10 +23,10 @@ npm run server
 ## Usage 
 To get the translation, we can use Postman or any web browser or we can simply use Thunder Client in VScode and hit this API as follow:
 ```
-{URL}localhost:1234/translateData
-
-# URL: (http://localhost:5000) or Deployed link
+localhost:1234/translateData
 ```
+and then pass the parameters text: "The text that you want to translate" to: "the ISO code e.g. `hi`"
+
 
 We have to pass two `Query Params` with 
 ```
