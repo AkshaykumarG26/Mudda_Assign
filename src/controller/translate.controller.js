@@ -6,7 +6,6 @@ const TranslatedData = require("../model/translate.model");
 
 const translate = require("@vitalets/google-translate-api");
 
-// const translate = require("google-translate-api");
 
 router.post("/", (req, res) => {
   try {
@@ -16,8 +15,8 @@ router.post("/", (req, res) => {
       .then((response) => {
         // console.log(response.text);
         // console.log(response.from.language.iso);
-        console.log(req.body);
-        const data = TranslatedData.create({ ...req.body, response });
+        // const d = ({...req.body, response});
+        const data = TranslatedData.create(req.body);
         res.send(response.text);
       })
       .catch((err) => {
@@ -29,5 +28,4 @@ router.post("/", (req, res) => {
 });
 
 
-
-module.exports = router
+module.exports = router;
