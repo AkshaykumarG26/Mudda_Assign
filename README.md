@@ -36,4 +36,4 @@ after entering this url in above mentioned, select POST method and select body t
     <br/>A list of all [ISO Language Codes](https://datahub.io/core/language-codes/r/0.html) is attached here.
 
 - A sample example is shown here when we hit the route on Thunder Client.
-![](./_images/sample_example.png)
+![](./screenshot.png)
